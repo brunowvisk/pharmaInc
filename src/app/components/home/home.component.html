@@ -11,6 +11,11 @@
 
       <table mat-table [dataSource]="dataSource" 
             matSort matSortActivate="created" matSortDisableClear matSortDirection="desc">
+            <ng-container matColumnDef="picture">
+              <th mat-header-cell *matHeaderCellDef>  </th>
+              <td mat-cell *matCellDef="let element"> 
+                <img class="example-header-image" src="{{element.picture.thumbnail}}" alt=""> </td>
+            </ng-container>
           <ng-container matColumnDef="name">
             <th mat-header-cell *matHeaderCellDef> Name </th>
             <td mat-cell *matCellDef="let element"> 

@@ -15,9 +15,7 @@
   .example-header-image {
 
     background-size: cover;
-    width: 30%;
     margin-bottom: 10px;
-
     border-radius:25px; 
     align-items: center;
   }

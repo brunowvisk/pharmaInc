@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit, OnChanges, AfterViewInit{
   filterEntity: ipatientDetails;
   filterType: MatTableFilter;
 
-  displayedColumns: string[] = ['name', 'gender', 'birth', 'nat', 'actions'];
+  displayedColumns: string[] = ['picture','name', 'gender', 'birth', 'nat', 'actions'];
   dataSource = new MatTableDataSource<iresultsModel>(this.patients);
   selection = new SelectionModel<iresultsModel>(true, []);
   
@@ -80,7 +80,7 @@ export class HomeComponent implements OnInit, OnChanges, AfterViewInit{
     obj.action = action;
 
     const dialogRef = this.dialog.open(ModalDetailsComponent, {
-      width: '600px',
+      width: '500px',
       data: obj,
     });
 
