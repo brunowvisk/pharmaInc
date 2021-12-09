@@ -30,7 +30,7 @@ import { MatInputModule } from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import { MatTableFilterModule } from 'mat-table-filter';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
-
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 
 
@@ -67,7 +67,8 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     MatInputModule,
     MatButtonModule,
     MatTableFilterModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+    DragDropModule
 
   ],
   exports: [
