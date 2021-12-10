@@ -1,27 +1,59 @@
-# CoodeshChallenge
+# Pharma Inc. (Challenge by Coodesh)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.2.
+Angular project connected to an API Rest provided by Coodesh.
 
-## Development server
+In this project, we have a patient data of Pharma Inc. displayed in a table. If someone wants more details about some patient, they just can click on the "Details button" to obtain more information.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Technologies used in the project
 
-## Code scaffolding
+- [Angular 13](https://angular.io/) - Framework
+- [Angular Material 13](https://material.angular.io/) - UI component framework
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## How to install
 
-## Build
+### Prerequisites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- npm
+  ```
+  npm install npm@latest -g
+  ```
+- angular/cli
+  ```
+  npm install -g @angular/cli
+  ```
+- angular/material
+  ```
+  ng add @angular/material
+  ```
+  
+### Installation
+  
+1. Create a new folder and navigate to this location    
+    ```
+    C:\Users\'username'>cd C:\Users\'yourusername'\ (...)
+    ```
+3. Clone the repo in your new created folder
+    ```
+    git clone https://github.com/brunowvisk/pharmaInc.git
+    ```
+3. Use Angular/CLI command to open the application on your browser
+    ```
+    ng serve
+    ```
+4. Type the URL informed by the system. Usually, the path is: http://localhost:4200/
+5. Now, you can you use the application.
 
-## Running unit tests
+## Version control
+  [github](https://github.com/)
+  
+## Contact
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Bruno Rocha - https://www.linkedin.com/in/bruno-f-rocha-6770a31a2/
+- Project link - https://github.com/brunowvisk/pharmaInc/tree/main
 
-## Running end-to-end tests
+## Acknowledgments
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- [Front-end Challenge 2021 by Coodesh](https://lab.coodesh.com/public-challenges/front-end-challenge-2021)
+- [Angular Material Icons List](https://www.angularjswiki.com/angular/angular-material-icons-list-mat-icon-list/)
+- [randomuser.me](https://randomuser.me/documentation)
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
