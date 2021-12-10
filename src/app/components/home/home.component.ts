@@ -20,9 +20,6 @@ import { MatSort, MatSortHeader, Sort, SortDirection } from '@angular/material/s
 export class HomeComponent implements OnInit, OnChanges, AfterViewInit{
 
   public patients: Array<iresultsModel> = new Array();
-  sortedData : ipatientDetails[];
-  genderPatient : ipatientDetails[];
-
 
   displayedColumns: string[] = ['picture','name', 'gender', 'birth', 'nat', 'actions'];
   dataSource = new MatTableDataSource<iresultsModel>(this.patients);
