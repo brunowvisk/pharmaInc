@@ -17,18 +17,12 @@ import { iresultsModel } from '../model/iresultsModel';
 export class ApiServiceService {
 
   randonUserUrl = "https://randomuser.me/api/?results=100"
-  fullnameUrl = "https://randomuser.me/api/"
 
 
   constructor(private http: HttpClient) { }
 
   getAllPatients(): Observable<igeneralModel> {
     return this.http.get<igeneralModel>(this.randonUserUrl);
-  }
-
-
-  getRepoIssues(): Observable<iinfoModel> {
-    return this.http.get<iinfoModel>(this.randonUserUrl);
   }
 
 }

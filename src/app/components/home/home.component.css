@@ -12,7 +12,14 @@ th.mat-header-cell {
 
 .example-full-width {
   width: 20%;
-
   padding-left: 5%;
 }
 
+.example-header-image {
+
+  background-size: cover;
+  margin-bottom: 0px;
+  border-radius:25px; 
+  align-items: center;
+  margin-top: 7px;
+}  

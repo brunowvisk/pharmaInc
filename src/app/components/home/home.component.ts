@@ -9,7 +9,7 @@ import { ModalDetailsComponent } from '../modal-details/modal-details.component'
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableFilter } from 'mat-table-filter';
 import { ipatientDetails } from 'src/app/data/model/ipatientDetails';
-import { MatSort } from '@angular/material/sort';
+import { MatSort, MatSortHeader, Sort, SortDirection } from '@angular/material/sort';
 
 @Component({
   selector: 'app-home',
@@ -20,15 +20,14 @@ import { MatSort } from '@angular/material/sort';
 export class HomeComponent implements OnInit, OnChanges, AfterViewInit{
 
   public patients: Array<iresultsModel> = new Array();
-  filterEntity: ipatientDetails;
-  filterType: MatTableFilter;
 
-  displayedColumns: string[] = ['name', 'gender', 'birth', 'nat', 'actions'];
+  displayedColumns: string[] = ['picture','name', 'gender', 'birth', 'nat', 'actions'];
   dataSource = new MatTableDataSource<iresultsModel>(this.patients);
   selection = new SelectionModel<iresultsModel>(true, []);
   
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
-  @ViewChild(MatSort) sort: MatSort;
+  @ViewChild(MatSort) public sort: MatSort;
+
 
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
@@ -38,7 +37,7 @@ export class HomeComponent implements OnInit, OnChanges, AfterViewInit{
   @ViewChild(MatTable,{static:true}) table: MatTable<any>;
 
   constructor(public dialog: MatDialog, 
-              private apiService: ApiServiceService){ }
+              private apiService: ApiServiceService){  }
 
   ngAfterViewInit(): void {
     this.dataSource = new MatTableDataSource<iresultsModel>(this.patients);
@@ -73,14 +72,13 @@ export class HomeComponent implements OnInit, OnChanges, AfterViewInit{
 
       })
     
-
   }
 
   redirectToDetails(action: any, obj: { action: any; }) {
     obj.action = action;
 
     const dialogRef = this.dialog.open(ModalDetailsComponent, {
-      width: '600px',
+      width: '500px',
       data: obj,
     });
 
@@ -90,12 +88,5 @@ export class HomeComponent implements OnInit, OnChanges, AfterViewInit{
 
   }
 
-  
 }
-
-
-
-
-
-
 
