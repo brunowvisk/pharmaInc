@@ -18,14 +18,3 @@ export class ipatientData {
                 public id: iidModel[],
                 ) { }
 }
-
-// Imagem
-// Nome completo
-// Email
-// Gênero
-// Data de nascimento
-// Telefone
-// Nacionalidade
-// Endereço
-// ID (Número de identificação)
-// URL para compartilhamento
