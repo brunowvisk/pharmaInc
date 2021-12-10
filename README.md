@@ -50,6 +50,7 @@ In this project, we have a patient data of Pharma Inc. displayed in a table. If 
 
 - Bruno Rocha - https://www.linkedin.com/in/bruno-f-rocha-6770a31a2/
 - Project link - https://github.com/brunowvisk/pharmaInc/tree/main
+- App description using Loom Screencast tool - https://www.loom.com/share/a6ec74e6e08140a2a93c2ba6c3f1f74f
 
 ## Acknowledgments
 
